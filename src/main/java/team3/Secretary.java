@@ -1,2 +1,5 @@
-package team3;public class Secretary {
+package team3;
+
+public class Secretary extends User {
+
 }

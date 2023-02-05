@@ -1,2 +1,7 @@
-package team3;public class ClinicalRecord {
+package team3;
+
+public class ClinicalRecord {
+
+
+
 }
