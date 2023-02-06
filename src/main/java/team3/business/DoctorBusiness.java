@@ -1,7 +1,12 @@
 package team3.business;
 
+import team3.database.DoctorDB;
+import team3.database.PatientDB;
+import team3.dati.Doctor;
 import team3.dati.MedicalRecords;
 import team3.dati.Patient;
+
+import java.util.List;
 
 /**
  * @author Lucagiorgi
@@ -10,6 +15,11 @@ import team3.dati.Patient;
  * -
  */
 public class DoctorBusiness implements ITaskEmployee{
+
+    public List<Doctor> getAllDoctor(){
+        DoctorDB doctorDB = new DoctorDB();
+        return doctorDB.readAll();
+    }
 
     public void createMedicalRecords(
             Patient patient, String allergies, String anamnesiPatologicaRecente, String motivoDelRicovero,
