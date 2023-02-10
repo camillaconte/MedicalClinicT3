@@ -1,5 +1,7 @@
 package team3;
 
+import team3.users.Doctor;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,16 +15,7 @@ import java.util.List;
 public class ClinicalPerformance {
 
     String name; //e.g. "Elettrocardiogramma", "Visita Nefrologica"
-    int duration; //in minutes
-
-    //Which doctors can provide this kind of clinical performance?
-    List<Appointment> appointmentsAvailable;
-
-    /**
-     * in euros
-     * int: perché in genere i prezzi sono numeri interi
-     * (difficile che sia "Visita Cardiologica: 110,50 euro"
-     */
+    List<Doctor> doctorsAbleToPerform; //Which doctors can provide this kind of clinical performance?
     int price;
     int priceWithNationalHealthService;
     boolean isPaidByNationalHealthService;
@@ -30,8 +23,5 @@ public class ClinicalPerformance {
     boolean isMedicalPrescriptionRequired;
     int durationInMinutes;
     String specialWarnings;
-
-
-
 
 }

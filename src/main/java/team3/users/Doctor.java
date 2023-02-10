@@ -1,8 +1,10 @@
-package team3;
+package team3.users;
+
+import team3.Appointment;
+import team3.ClinicalPerformance;
+import team3.users.User;
 
 import java.io.File;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Doctor extends User {

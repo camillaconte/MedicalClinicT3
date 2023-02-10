@@ -1,5 +1,8 @@
 package team3;
 
+import team3.users.Doctor;
+import team3.users.Patient;
+
 import java.time.LocalDateTime;
 
 /**
@@ -11,43 +14,14 @@ import java.time.LocalDateTime;
  */
 public class Appointment {
 
-    LocalDateTime dateTime;
-
-    /**
-     * Se un appuntamento è di durata < rispetto al tempo previsto per una
-     * determinata ClinicalPerformance, allora non si può assegnare alla
-     * ClinicalPerformance quella data e ora, quell'appuntamento
-     */
-    int minutes;
-
-    String clinicCity;
-
-    Room room; //in which room of the clinic will take place the visit?
-
+    Slot slot;
+    //Doctor doctor; è già nella slot!
     Patient patient;
 
-    Doctor doctor;
-
-    public Appointment(LocalDateTime dateTime, int minutes, String clinicCity, Room room, Doctor doctor) {
-        this.dateTime = dateTime;
-        this.minutes = minutes;
-        this.clinicCity = clinicCity;
-        this.room = room;
-        this.doctor = doctor;
+    public Appointment(Slot slot, Patient patient) {
+        this.slot = slot;
+        this.patient = patient;
     }
-
-    /**
-     * A possibility to organize appointments in the clinic would be:
-     * 1) set all the possible availability for each doctor:
-     * e.g. Doctor Luca is in clinic 01/03/23 at 10:00 and 03/03/23 at 12:00
-     * 2) setting the room
-     * 3) NOT SETTING the Patient yet, we need to create appointments
-     * with empty patient space!
-     * THIS IS THE REASON WHY THE CONSTRUCTOR TAKES NO PATIENT PARAMETERS
-     * IT IS NOT POSSIBLE TO CREATE AN APPOINTMENT without:
-     * - a doctor available
-     * - a room available
-     */
 
     public void setPatient(Patient patient){
         this.patient = patient;
@@ -57,12 +31,5 @@ public class Appointment {
         this.patient = null;
     }
 
-    public void getFreeAppointmentByDoctor (Doctor preferredDoctor, Patient newPatient) {
-        if (this.doctor == preferredDoctor && this.patient == null) {
-            this.patient = newPatient;
-        }
-        else {
-            System.out.println("In this Date Doctor " + doctor + " is not available");
-        }
     }
-}
+

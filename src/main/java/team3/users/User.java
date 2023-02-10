@@ -1,4 +1,6 @@
-package team3;
+package team3.users;
+
+import team3.Address;
 
 import java.util.Date;
 
