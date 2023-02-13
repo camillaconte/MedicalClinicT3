@@ -1,6 +1,7 @@
-package team3;
+package team3.model.serviceHandling;
 
-import team3.users.Patient;
+import team3.model.serviceHandling.ClinicalPerformance;
+import team3.model.users.Patient;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package team3;
+package team3.model.serviceHandling;
 
 public class Exemption {
 

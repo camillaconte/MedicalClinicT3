@@ -1,10 +1,4 @@
-package team3;
-
-import team3.users.Doctor;
-import team3.users.LabTechnician;
-import team3.users.Patient;
-
-import java.util.List;
+package team3.model.records;
 
 public class LabTest {
 

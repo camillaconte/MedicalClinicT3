@@ -1,8 +1,7 @@
-package team3.users;
+package team3.model.users;
 
-import team3.Appointment;
-import team3.ClinicalPerformance;
-import team3.users.User;
+import team3.model.serviceHandling.ClinicalPerformance;
+import team3.model.serviceHandling.Appointment;
 
 import java.io.File;
 import java.util.List;

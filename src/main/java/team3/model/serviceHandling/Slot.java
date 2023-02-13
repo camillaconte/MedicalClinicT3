@@ -1,8 +1,8 @@
-package team3;
-import team3.users.Doctor;
+package team3.model.serviceHandling;
+import team3.model.clinicFeatures.Clinic;
+import team3.model.users.Doctor;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class Slot {
 

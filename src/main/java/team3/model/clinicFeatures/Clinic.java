@@ -1,6 +1,7 @@
-package team3;
+package team3.model.clinicFeatures;
 
-import team3.users.*;
+import team3.model.serviceHandling.Address;
+import team3.model.users.*;
 
 import java.io.File;
 import java.util.List;

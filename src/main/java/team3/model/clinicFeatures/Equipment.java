@@ -1,4 +1,4 @@
-package team3;
+package team3.model.clinicFeatures;
 
 import java.util.Date;
 

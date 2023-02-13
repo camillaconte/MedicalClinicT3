@@ -1,8 +1,7 @@
-package team3;
+package team3.model.serviceHandling;
 
-import team3.users.Doctor;
+import team3.model.users.Doctor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

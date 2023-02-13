@@ -1,7 +1,7 @@
-package team3;
+package team3.model.records;
 
-import team3.users.Doctor;
-import team3.users.Patient;
+import team3.model.users.Doctor;
+import team3.model.users.Patient;
 
 import java.io.File;
 

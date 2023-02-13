@@ -1,40 +1,25 @@
-package team3.users;
+package team3.model.users;
 
-import team3.Address;
+import team3.model.serviceHandling.Address;
 
 import java.util.Date;
 
-public class User {
+public abstract class User {
 
     String id;
-    String userName;
-    String passWord;
     String name;
     String surname;
+
+    String userName;
+    String passWord;
     Date birthDate;
     String fiscalCode;
     String email;
     String mainTelephoneNumber;
     Address address;
 
-    public User() {
-    }
 
-    public User(String id, String userName, String passWord, String name, String surname,
-                Date birthDate, String fiscalCode, String email, String mainTelephoneNumber,
-                Address address) {
-        this.id = id;
-        this.userName = userName;
-        this.passWord = passWord;
-        this.name = name;
-        this.surname = surname;
-        this.birthDate = birthDate;
-        this.fiscalCode = fiscalCode;
-        this.email = email;
-        this.mainTelephoneNumber = mainTelephoneNumber;
-        this.address = address;
-    }
-
+    /*
     public void setId(String id) {
         this.id = id;
     }
@@ -114,4 +99,6 @@ public class User {
     public Address getAddress() {
         return address;
     }
+     */
+
 }
