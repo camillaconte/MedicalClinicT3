@@ -13,7 +13,7 @@ public class LabTestRecord {
     Patient patient;
     Doctor reportingDoctor; //medico refertante
     LabTechnician responsibleTechnician; //tecnico responsabile
-    List<Equipment> labMachines;
+    //List<Equipment> labMachines;
 
 
 }

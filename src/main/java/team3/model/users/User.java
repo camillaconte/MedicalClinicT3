@@ -6,9 +6,11 @@ import java.util.Date;
 
 public abstract class User {
 
-    String id;
+    int id;
     String name;
     String surname;
+
+    Address address;
 
     String userName;
     String passWord;
@@ -16,7 +18,9 @@ public abstract class User {
     String fiscalCode;
     String email;
     String mainTelephoneNumber;
-    Address address;
+
+
+
 
 
     /*

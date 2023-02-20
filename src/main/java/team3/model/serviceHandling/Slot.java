@@ -8,7 +8,7 @@ public class Slot {
 
     LocalDateTime dateAndTime;
     Clinic clinic;
-    Room assignedRoom;
+    //Room assignedRoom;
     Doctor doctor;
     int minutesAvailable;
 
